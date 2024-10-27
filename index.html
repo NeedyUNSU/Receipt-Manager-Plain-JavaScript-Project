@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="Startup()">
+    <div class="top-panel">
+
+    </div>
+    <div class="left-panel">
+        <button type="button" onclick="ControlsUi()">controls</button>
+    </div>
+    <div class="right-panel">
+
+        <h1> Paragon 12-32-12/002</h1>
+
+        <table class="recipt">
+            <tr>
+                <th>LP</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Sum</th>
+                <th class="edit hidden-element">Edit</th>
+                <th class="delete hidden-element">Delete</th>
+            </tr>
+
+            <!-- <tr>
+              <td class="list-number">1</td>
+              <td class="list-name">apple</td>
+              <td class="number">2</td>
+              <td class="number">2</td>
+              <td class="number">4</td>
+              <td class="list-number edit">
+                <button type="button" onclick="test()">Edit</button>
+              </td>
+              <td class="list-number delete">
+                <button type="button" onclick="test()">delete</button>
+              </td>
+            </tr>
+            <tr>
+                <td class="list-number">2</td>
+                <td class="list-name">banana</td>
+                <td class="number">5</td>
+                <td class="number">2</td>
+                <td class="number">10</td>
+                <td class="list-number edit">
+                  <button type="button" onclick="test()">Edit</button>
+                </td>
+                <td class="list-number delete">
+                  <button type="button" onclick="test()">delete</button>
+                </td>
+            </tr> -->
+            <tr>
+                <td class="list-number">
+                    <input class="list-number" type="number" name="list-number" id="LP" value="3" disabled>
+                </td>
+                <td class="list-name">
+                    <input class="list-name" type="text" name="list-name" id="name" value="pitch" >
+                </td>
+                <td class="number">
+                    <input class="number" type="number" name="list-number" id="LP" value="2" disabled>
+                </td>
+                <td class="number">
+                    <input class="number" type="number" name="list-number" id="LP" value="4" disabled>
+                </td>
+                <td class="number">
+                    <input class="number" type="number" name="list-number" id="LP" value="8" disabled>
+                </td>
+                <td class="list-number hidden-element edit">
+                  <button type="button" onclick="test()">Edit</button>
+                </td>
+                <td class="list-number hidden-element delete">
+                  <button type="button" onclick="test()">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="list-name">Summary</td>
+                <td class="number">14</td>
+            </tr>
+          </table>
+    </div>
+</body>
+</html>
