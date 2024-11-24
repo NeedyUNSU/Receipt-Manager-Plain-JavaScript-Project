@@ -1,0 +1,172 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+th, tr:nth-child(even) {
+    background-color: #b7b7b7;
+}
+
+table td, table th {
+    border-bottom: 1px solid #000;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+.total {
+    font-weight: bold;
+    text-align: right;
+}
+
+.form-container {
+    width: 30%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.form-container table {
+    width: 100%;
+    margin: 0;
+    border: none;
+}
+
+.form-container td {
+    padding: 5px;
+    border: none;
+}
+
+input[type="text"], input[type="number"], input[type="button"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="button"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+.total {
+    font-weight: bold;
+    text-align: right;
+}
+.header {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.receipt {
+    width: 80%;
+    margin: 20px auto;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.button-container {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.hidden-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.button-container:hover .hidden-button {
+    opacity: 1;
+}
+
+.hidden-button button {
+    width: 100%;
+    height: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden-button button:hover {
+    background-color: #45a049;
+}
+.button-container-flex {
+    display: flex; 
+    justify-items: right;
+}
+.td-slim{
+    width: 200px;
+}
+.btn-red button:hover{
+    background-color:rgb(219, 44, 44);
+}
+.btn-red button {
+    background-color:rgb(255, 0, 0);
+}
+
+.dialog-button-cancel{
+    background-color: #af4c4c; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    padding: 5px;                  
+}
+
+.dialog-button-save {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none;
+    cursor: pointer; 
+    border-radius: 4px; 
+    padding: 5px;
+}
+
+.dialog-button-cancel:hover {
+    background-color: #ae2c2c;
+}
+
+.dialog-button-save:hover {
+    background-color: #00df07; 
+}

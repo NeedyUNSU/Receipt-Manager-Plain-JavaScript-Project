@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="receipt">
+        <div class="header">PARAGON 23-11-24/015</div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>LP</th>
+                    <th>NAZWA</th>
+                    <th>ILOŚĆ</th>
+                    <th>CENA</th>
+                    <th>SUMA</th>
+                </tr>
+            </thead>
+            <tbody id="productsTableBody">
+            </tbody>
+            <tfoot>
+                <tr style="border-top: 1px black solid;"> 
+                    <td><input onclick="receipt.addProductDialog()" type="button" value="Dodaj [Dialog]"></td>
+                    <td colspan="4" class="total">RAZEM</td>
+                    <td id="totalPrice" class="total">0,00 zł</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="form-container">
+        <h3>Nowa pozycja</h3>
+        <table>
+            <tr>
+                <td>Nazwa:</td>
+                <td><input id="nameTx" type="text" placeholder="Nazwa Produktu"></td>
+            </tr>
+            <tr>
+                <td style="background-color: #fff;">Ilość:</td>
+                <td style="background-color: #fff;"><input id="amountNb" type="number" min="0" placeholder="Ilość"></td>
+            </tr>
+            <tr>
+                <td>Cena:</td>
+                <td><input id="priceNb" type="number" min="0" placeholder="Cena"></td>
+            </tr>
+            <tr>
+                <td style="background-color: #fff;"></td>
+                <td style="background-color: #fff;"><input id="addBttn" type="button" value="Dodaj"></td>
+            </tr>
+        </table>
+    </div>
+
+    <dialog id="editDialog">
+        <h3>Edytuj produkt</h3>
+        <table>
+            <tr>
+                <td>Nazwa:</td>
+                <td><input id="editNameTx" type="text"></td>
+            </tr>
+            <tr>
+                <td style="background-color: #fff;">Ilość:</td>
+                <td style="background-color: #fff;"><input id="editAmountNb" type="number" min="0"></td>
+            </tr>
+            <tr>
+                <td>Cena:</td>
+                <td><input id="editPriceNb" type="number" min="0"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: right; background-color: #fff;">
+                    <button class="dialog-button-cancel" id="editCancelBtn">Anuluj</button>
+                    <button class="dialog-button-save" id="editSaveBtn">Zapisz</button>
+                </td>
+            </tr>
+        </table>
+    </dialog>
+    <dialog id="addDialog">
+        <h3>Dodaj produkt</h3>
+        <table>
+            <tr>
+                <td>Nazwa:</td>
+                <td><input id="addNameTx" type="text"></td>
+            </tr>
+            <tr>
+                <td style="background-color: #fff;">Ilość:</td>
+                <td style="background-color: #fff;"><input id="addAmountNb" type="number" min="0"></td>
+            </tr>
+            <tr>
+                <td>Cena:</td>
+                <td><input id="addPriceNb" type="number" min="0"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: right; background-color: #fff;">
+                    <button class="dialog-button-cancel" id="addCancelBtn">Anuluj</button>
+                    <button class="dialog-button-save" id="addSaveBtn">Dodaj</button>
+                </td>
+            </tr>
+        </table>
+    </dialog>
+</body>
+</html>
